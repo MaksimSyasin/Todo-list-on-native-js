@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Todo-list</title>
+</head>
+
+<body>
+    <div class="main_content">
+        <div class="todo_list">
+            <div class="menu">
+                <div class="todo_title">
+                    <img src='images/todo-icon.png'>
+                    <h1>
+                        Todo list
+                    </h1>
+                </div>
+                <div class="todo_list-title">
+                    <a class="btn_add-task open-popup" href="#">
+                        + Add Task
+                    </a>
+                </div>
+            </div>
+
+            <div class="main-block_tasks">
+                <div class="tasks-block progress">
+                    <div class="task-title">
+                        <h2>
+                            Tasks
+                        </h2>
+                    </div>
+                    <div class="tasks">
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="main-block_tasks task_done">
+                <div class="tasks-block">
+                    <div class="task-title flexbtn">
+                        <h2>
+                            Completed tasks
+                        </h2>
+
+                        <div class="clearbtn">
+                            Clear All
+                        </div>
+                    </div>
+                    <div class="tasks">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup__bg">
+        <form class="popup">
+            <img src="images/close.svg" class="close-popup">
+            <label>
+                <input type="text" name="title" required>
+                <div class="label__text">
+                    <p>
+                        Title
+                    </p>
+                </div>
+            </label>
+            <label>
+                <textarea name="description"></textarea>
+                <div class="label__text">
+                    <p>
+                        description
+                    </p>
+                </div>
+            </label>
+            <button type="submit">Add task</button>
+        </form>
+    </div>
+
+    <div class="modal_task">
+        <div class="modal_task-window">
+            <div class="close-modal">
+                <img src="images/close.svg" class="">
+            </div>
+            <div class="modal_task-content">
+
+            </div>
+        </div>
+    </div>
+
+    <script src="js/index.js"></script>
+</body>
